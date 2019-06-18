@@ -1,22 +1,33 @@
 <template>
-  
-    <v-layout row wrap class="mt-4">
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <v-img
-          class="white--text"
-          height="200px"
-          src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
-        >
-          <v-container fill-height fluid>
-            <v-layout fill-height>
-              <v-flex xs12 align-end flexbox>
-                <span class="headline">Top 10 Australian beaches</span>
+  <v-container>
+    <v-layout row wrap>
+      <v-flex xs12 sm10 md8 offset-sm2>
+        <v-card class="info">
+          <v-container fluid>
+            <v-layout row>
+              <v-flex xs5 sm4 md3>
+                <v-card-media
+                  src="https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg"
+                  height="130px"
+                ></v-card-media>
+              </v-flex>
+              <v-flex xs7 sm8 md9>
+                <v-card-title primary-title>
+                  <div>
+                    <h5 class="white--text mt-0">Meetup</h5>
+                    <div class="white--text mt-1">17 July 2017</div>
+                  </div>
+                </v-card-title>
+                <v-card-action>
+                  <v-btn to="/meetups/1">
+                    <v-icon left>arrow_forward</v-icon>View Meetup
+                  </v-btn>
+                </v-card-action>
               </v-flex>
             </v-layout>
           </v-container>
-     </v-img>
-      </v-card>
-    </v-flex>
+        </v-card>
+      </v-flex>
     </v-layout>
+  </v-container>
 </template>
